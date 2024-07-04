@@ -1,0 +1,62 @@
+.navbar {
+  background: linear-gradient(135deg, #0033a0, #1e3c72, #a23b72, #ce1126); /* Philippine flag inspired gradient */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: flex;
+  justify-content: space-between; /* Align items at each end */
+  align-items: center; /* Vertically center items */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px; /* Adjust size as needed */
+  height: auto;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1; /* Allow navbar-nav to take remaining space */
+}
+
+.nav-item {
+  margin-left: 10px; /* Adjust spacing between items */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.5s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+  border-radius: 6px; /* Rounded corners on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .nav-item {
+    margin: 10px 0; /* Adjust vertical spacing */
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+  }
+}
